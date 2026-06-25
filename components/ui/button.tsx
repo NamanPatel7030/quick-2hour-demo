@@ -48,17 +48,23 @@ export interface ButtonProps
   variant?: NonNullable<Parameters<typeof buttonVariants>[0]>['variant'];
   size?: NonNullable<Parameters<typeof buttonVariants>[0]>['size'];
   asChild?: boolean;
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, type = 'button', ...props }, ref) => {
+  ({ className, variant, size, type = 'button', leftIcon, rightIcon, children, asChild: _asChild, ...props }, ref) => {
     return (
       <button
         ref={ref}
         type={type}
         className={cn(buttonVariants({ variant, size }), className)}
         {...props}
-      />
+      >
+        {leftIcon}
+        {children}
+        {rightIcon}
+      </button>
     );
   },
 );

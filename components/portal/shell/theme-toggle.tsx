@@ -23,11 +23,14 @@ export function ThemeToggle() {
   React.useEffect(() => {
     if (theme !== 'system' || !mounted) return;
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    const onChange = (e: MediaQueryListEvent) => {
-      useThemeStore.getState().setResolved(e.matches ? 'dark' : 'light');
+    const onChange = (e: MediaQueryListEvent | MediaQueryList) => {
+      const matches = 'matches' in e ? e.matches : false;
+      useThemeStore.getState().setResolved(matches ? 'dark' : 'light');
     };
     onChange(mq);
-    return () => mq.removeEventListener('change', onChange);
+    const handler = (e: MediaQueryListEvent) => onChange(e);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
   }, [theme, mounted]);
 
   const cycle = () => {

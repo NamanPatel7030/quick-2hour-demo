@@ -5,7 +5,6 @@ import { getIronSession } from 'iron-session';
 import type { SessionData } from '@/types';
 import { sessionOptions } from './session';
 import { ROUTES } from '@/lib/constants/routes';
-import { firmAttorneys } from '@/data/firm';
 
 export async function getSession(): Promise<SessionData | null> {
   const cookieStore = await cookies();
@@ -28,12 +27,4 @@ export async function requireDanny(): Promise<SessionData> {
   if (session.email === 'danny@pathora.ai') return session;
   // In this demo, any signed-in user is treated as Danny
   return session;
-}
-
-export function getAttorneyById(id: string) {
-  return firmAttorneys.find((a) => a.id === id);
-}
-
-export function getAttorneyByEmail(email: string) {
-  return firmAttorneys.find((a) => a.email === email);
 }

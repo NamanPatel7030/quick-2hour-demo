@@ -7,7 +7,7 @@ import { z } from 'zod';
 import { revalidatePath } from 'next/cache';
 import { sessionOptions } from '@/lib/auth/session';
 import { ROUTES } from '@/lib/constants/routes';
-import { getAttorneyByEmail } from '@/lib/auth/guards';
+import { getAttorneyByEmail } from '@/lib/auth/lookup';
 import type { SessionData } from '@/types';
 
 // Login validation schema
