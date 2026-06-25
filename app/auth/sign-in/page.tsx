@@ -15,6 +15,22 @@ import type { LoginState } from '@/app/actions/auth';
 import { cn } from '@/utils/cn';
 
 export default function SignInPage() {
+  return (
+    <React.Suspense fallback={<SignInFallback />}>
+      <SignInForm />
+    </React.Suspense>
+  );
+}
+
+function SignInFallback() {
+  return (
+    <div className="flex items-center justify-center py-16">
+      <Loader2 className="size-5 animate-spin text-text-sub-600" />
+    </div>
+  );
+}
+
+function SignInForm() {
   const searchParams = useSearchParams();
   const nextPath = searchParams.get('next') ?? '/attorney/overview';
   const [state, setState] = React.useState<LoginState | undefined>();
