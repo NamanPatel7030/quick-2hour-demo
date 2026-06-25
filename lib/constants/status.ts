@@ -31,6 +31,7 @@ export const billStatusMap: Record<string, StatusTone> = {
   'Under Review': 'info',
   'Counter Offered': 'primary',
   'Counter Sent': 'primary',
+  'Offer Received': 'warning',
   Accepted: 'success',
   Paid: 'success',
   Overdue: 'error',

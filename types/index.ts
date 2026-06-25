@@ -156,6 +156,7 @@ export type Bill = {
     | 'Under Review'
     | 'Counter Offered'
     | 'Counter Sent'
+    | 'Offer Received'
     | 'Accepted'
     | 'Paid'
     | 'Overdue'
