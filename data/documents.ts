@@ -1,0 +1,38 @@
+import type { Document } from '@/types';
+
+export const documents: Document[] = [
+  { id: 'doc_001', caseId: 'CASE-2024-0142', name: 'Intake Form — Reyes.pdf', category: 'Intake Form', fileType: 'pdf', sizeKB: 184, uploadedAt: '2025-09-16T10:22:00Z', uploadedBy: { name: 'Jessica Marquez', initials: 'JM' }, shared: true },
+  { id: 'doc_002', caseId: 'CASE-2024-0142', name: 'Police Report — Hwy 101.pdf', category: 'Police Report', fileType: 'pdf', sizeKB: 412, uploadedAt: '2025-09-18T14:11:00Z', uploadedBy: { name: 'California Highway Patrol', initials: 'CHP' }, shared: true },
+  { id: 'doc_003', caseId: 'CASE-2024-0142', name: 'Lumbar MRI Report.pdf', category: 'Imaging', fileType: 'pdf', sizeKB: 1240, uploadedAt: '2025-10-04T09:32:00Z', uploadedBy: { name: 'Pacific Imaging', initials: 'PI' }, shared: true },
+  { id: 'doc_004', caseId: 'CASE-2024-0142', name: 'Cervical MRI Report.pdf', category: 'Imaging', fileType: 'pdf', sizeKB: 1180, uploadedAt: '2025-10-04T09:35:00Z', uploadedBy: { name: 'Pacific Imaging', initials: 'PI' }, shared: true },
+  { id: 'doc_005', caseId: 'CASE-2024-0142', name: 'EMG Results.pdf', category: 'Medical Record', fileType: 'pdf', sizeKB: 388, uploadedAt: '2025-10-12T15:42:00Z', uploadedBy: { name: 'Bay Neuro Diagnostics', initials: 'BN' }, shared: true },
+  { id: 'doc_006', caseId: 'CASE-2024-0142', name: 'State Farm — Initial Letter.pdf', category: 'Insurance Correspondence', fileType: 'pdf', sizeKB: 92, uploadedAt: '2025-09-30T08:01:00Z', uploadedBy: { name: 'State Farm', initials: 'SF' }, shared: false },
+  { id: 'doc_007', caseId: 'CASE-2024-0142', name: 'Liability Acceptance.pdf', category: 'Insurance Correspondence', fileType: 'pdf', sizeKB: 64, uploadedAt: '2025-11-04T16:22:00Z', uploadedBy: { name: 'State Farm', initials: 'SF' }, shared: true },
+  { id: 'doc_008', caseId: 'CASE-2024-0142', name: 'Lien Agreement — Signed.pdf', category: 'Lien', fileType: 'pdf', sizeKB: 224, uploadedAt: '2025-11-15T11:11:00Z', uploadedBy: { name: 'Jessica Marquez', initials: 'JM' }, shared: true },
+  { id: 'doc_009', caseId: 'CASE-2024-0142', name: 'Demand Letter.pdf', category: 'Correspondence', fileType: 'pdf', sizeKB: 156, uploadedAt: '2026-01-22T09:14:00Z', uploadedBy: { name: 'Danny Rackow', initials: 'DR' }, shared: false },
+  { id: 'doc_010', caseId: 'CASE-2024-0142', name: 'Insurance Offer 1.pdf', category: 'Insurance Correspondence', fileType: 'pdf', sizeKB: 88, uploadedAt: '2026-03-04T10:11:00Z', uploadedBy: { name: 'State Farm', initials: 'SF' }, shared: true },
+  { id: 'doc_011', caseId: 'CASE-2024-0142', name: 'Mediflow Counter 1.pdf', category: 'Insurance Correspondence', fileType: 'pdf', sizeKB: 78, uploadedAt: '2026-03-11T14:22:00Z', uploadedBy: { name: 'Danny Rackow', initials: 'DR' }, shared: true },
+  { id: 'doc_012', caseId: 'CASE-2024-0142', name: 'Settlement Draft — Round 3.pdf', category: 'Settlement', fileType: 'pdf', sizeKB: 142, uploadedAt: '2026-06-22T16:50:00Z', uploadedBy: { name: 'Danny Rackow', initials: 'DR' }, shared: false },
+  { id: 'doc_013', caseId: 'CASE-2024-0167', name: 'Intake Form — Reyes Slip & Fall.pdf', category: 'Intake Form', fileType: 'pdf', sizeKB: 196, uploadedAt: '2025-11-04T11:02:00Z', uploadedBy: { name: 'Devon Carter', initials: 'DC' }, shared: true },
+  { id: 'doc_014', caseId: 'CASE-2024-0167', name: 'Incident Photos.zip', category: 'Police Report', fileType: 'pdf', sizeKB: 2140, uploadedAt: '2025-11-05T15:30:00Z', uploadedBy: { name: 'Devon Carter', initials: 'DC' }, shared: true },
+  { id: 'doc_015', caseId: 'CASE-2025-0003', name: 'Intake Form — Okafor.pdf', category: 'Intake Form', fileType: 'pdf', sizeKB: 174, uploadedAt: '2025-12-20T09:14:00Z', uploadedBy: { name: 'Jessica Marquez', initials: 'JM' }, shared: true },
+  { id: 'doc_016', caseId: 'CASE-2025-0003', name: 'Police Report — I-405.pdf', category: 'Police Report', fileType: 'pdf', sizeKB: 488, uploadedAt: '2025-12-22T10:11:00Z', uploadedBy: { name: 'California Highway Patrol', initials: 'CHP' }, shared: true },
+  { id: 'doc_017', caseId: 'CASE-2025-0003', name: 'Brain MRI Report.pdf', category: 'Imaging', fileType: 'pdf', sizeKB: 1340, uploadedAt: '2026-05-14T13:22:00Z', uploadedBy: { name: 'Westside Imaging', initials: 'WI' }, shared: true },
+  { id: 'doc_018', caseId: 'CASE-2025-0018', name: 'Workers Comp — First Report.pdf', category: 'Insurance Correspondence', fileType: 'pdf', sizeKB: 124, uploadedAt: '2026-01-11T08:00:00Z', uploadedBy: { name: 'Texas Mutual', initials: 'TM' }, shared: true },
+  { id: 'doc_019', caseId: 'CASE-2025-0018', name: 'Lumbar MRI Report.pdf', category: 'Imaging', fileType: 'pdf', sizeKB: 1118, uploadedAt: '2026-05-22T11:11:00Z', uploadedBy: { name: 'Austin Diagnostic Center', initials: 'AD' }, shared: true },
+  { id: 'doc_020', caseId: 'CASE-2025-0018', name: 'Neuropsych Eval.pdf', category: 'Medical Record', fileType: 'pdf', sizeKB: 622, uploadedAt: '2026-05-29T14:33:00Z', uploadedBy: { name: 'Texas Neurology Group', initials: 'TN' }, shared: true },
+  { id: 'doc_021', caseId: 'CASE-2025-0098', name: 'Lien — Marchetti — Signed.pdf', category: 'Lien', fileType: 'pdf', sizeKB: 188, uploadedAt: '2026-04-08T10:11:00Z', uploadedBy: { name: 'Priya Iyer', initials: 'PI' }, shared: true },
+  { id: 'doc_022', caseId: 'CASE-2025-0098', name: 'Settlement — Round 3 Draft.pdf', category: 'Settlement', fileType: 'pdf', sizeKB: 158, uploadedAt: '2026-06-23T18:42:00Z', uploadedBy: { name: 'Danny Rackow', initials: 'DR' }, shared: false },
+  { id: 'doc_023', caseId: 'CASE-2025-0104', name: 'MRI Knee Report.pdf', category: 'Imaging', fileType: 'pdf', sizeKB: 1024, uploadedAt: '2026-06-17T12:00:00Z', uploadedBy: { name: 'Atlanta Imaging Partners', initials: 'AI' }, shared: true },
+  { id: 'doc_024', caseId: 'CASE-2025-0156', name: 'Final Settlement — Shah.pdf', category: 'Settlement', fileType: 'pdf', sizeKB: 144, uploadedAt: '2026-06-22T15:11:00Z', uploadedBy: { name: 'Eli Tanaka', initials: 'ET' }, shared: true },
+  { id: 'doc_025', caseId: 'CASE-2025-0188', name: 'Medical Records Request.pdf', category: 'Medical Record', fileType: 'pdf', sizeKB: 76, uploadedAt: '2026-05-25T09:11:00Z', uploadedBy: { name: 'Eli Tanaka', initials: 'ET' }, shared: true },
+  { id: 'doc_026', caseId: 'CASE-2025-0218', name: 'Product Liability Photos.zip', category: 'Police Report', fileType: 'pdf', sizeKB: 3200, uploadedAt: '2026-06-09T14:00:00Z', uploadedBy: { name: 'Priya Iyer', initials: 'PI' }, shared: true },
+  { id: 'doc_027', caseId: 'CASE-2025-0262', name: 'Closing Statement — Carter.pdf', category: 'Settlement', fileType: 'pdf', sizeKB: 96, uploadedAt: '2026-06-12T16:11:00Z', uploadedBy: { name: 'Marcus Lee', initials: 'ML' }, shared: true },
+  { id: 'doc_028', caseId: 'CASE-2025-0262', name: 'Final Settlement.pdf', category: 'Settlement', fileType: 'pdf', sizeKB: 128, uploadedAt: '2026-06-14T11:22:00Z', uploadedBy: { name: 'Marcus Lee', initials: 'ML' }, shared: true },
+  { id: 'doc_029', caseId: 'CASE-2024-0142', name: 'Case Notes 06-24.docx', category: 'Correspondence', fileType: 'docx', sizeKB: 24, uploadedAt: '2026-06-24T08:30:00Z', uploadedBy: { name: 'Danny Rackow', initials: 'DR' }, shared: false },
+  { id: 'doc_030', caseId: 'CASE-2025-0018', name: 'Bills Summary.xlsx', category: 'Bill', fileType: 'xlsx', sizeKB: 56, uploadedAt: '2026-06-20T09:11:00Z', uploadedBy: { name: 'Zoe Brennan', initials: 'ZB' }, shared: true },
+];
+
+export function documentsForCase(caseId: string): Document[] {
+  return documents.filter((d) => d.caseId === caseId);
+}
